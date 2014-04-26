@@ -45,4 +45,4 @@ If any file is missing, an error is thrown.
 After a successfull execution, the following datasets are returned:
  - **analysis.full** - a dataframe containing the full merged train and test data
  - **analysis.averages** - a dataframe containing an independent tidy set with the averages of mean and StdDev values for each subject and each activity.
-
+ - **tidydata.txt** - a text file with the tidy set from `analysis.averages`.
