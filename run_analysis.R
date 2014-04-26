@@ -110,5 +110,8 @@ analysis.full <- analysis.list[[1]]
 # Assign the independent tidy dataset of the averages to analysis.averages
 analysis.averages <- analysis.list[[2]]
 
+
+write.table(analysis.averages, "tidydata.txt")
+
 # Perform some cleanup
 rm(analysis.list)
