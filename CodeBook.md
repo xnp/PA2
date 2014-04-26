@@ -80,7 +80,7 @@ In order to combine the train and test data, the following steps were performed:
  - a dataframe constructor was created that combines test or train data by reading the subject, activity and measurements files and then joining them together, after replacing the numbercodes of activity with descriptive words.
  - after creating the two separate but complete train and test dataframes, they were combined by row.
  - the resulting dataframed was further trimmed down via dropping all non-"mean/std" or "subject", "activity" variables.
- - a data.table was created by the trimmed down dataframe, where a fucntion was performed on the subsetted (by subject and activity) data.
+ - a data.table was created by the trimmed down dataframe, where a function was performed on the subsetted (by subject and activity) data.
  - the procedure till this moment was wrapped inside a function called "analysis()" in order to better modularize the code.
  - "analysis()" returned a list with two elements, the full dataframe of the 10299 observations and the independent dataframe of the averages by subject and activity.
  - the first list element was assigned to `analysis.full` while the second to `analysis.averages`.
@@ -95,3 +95,5 @@ The resulting data consists of two indpendent datasets:
 
  2. The `analysis.averages` dataframe contains 180 observations of 68 variables("subject", "activity" and the average of the rest 66 variables of the previous dataset, for each subject and each activity.
 
+
+A text file "tidydata.txt" with the contents of `analysis.averages` is also created in the directory.
